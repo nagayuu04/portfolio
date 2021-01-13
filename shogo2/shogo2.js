@@ -60,4 +60,8 @@ $(window).scroll(function() {
         $(".book-wrapper").fadeOut();
         $(".black-bg").fadeOut();
     })
+    
+    AOS.init({
+    duration:2000
+});
 });
