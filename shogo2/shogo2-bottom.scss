@@ -1,0 +1,570 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title{
+    color: #444444;
+}
+
+.text{
+    color: #7B7B7B;
+}
+
+a{
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+@mixin text($color,$font,$align,$line){
+    color: $color;
+    font-size: $font;
+    font-family:"Times New Roman","游明朝体";
+    text-align: $align;
+    line-height: $line;
+}
+
+@mixin text-v($color,$font,$align,$line){
+    color: $color;
+    font-size: $font;
+    font-family:"Times New Roman","游明朝体";
+    text-align: $align;
+    line-height: $line;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.header-content{
+    max-width: calc(100%-40px);
+    margin: 0 auto;
+    width: 92%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+
+
+    &__logo{
+        margin-right: 120px;
+        display: flex;
+        align-items: center;
+
+        &--img{
+            width: auto;
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        &--title{
+            @include text(#000000,32px,left,38px);
+        
+        }
+    }
+
+    &__nav{
+        display: flex;
+        align-items: center;
+
+        &--item:not(:nth-of-type(3)){
+            margin-right: 30px;
+        }
+    }
+}
+
+.header-left__nav--item--link{
+    @include text(#000000,16px,left,42px);
+}
+
+.header-right{
+    &__book{
+        @include text(#ffffff,16px,left,48px);
+        padding: 19px 37px;
+        background-color: #978F10;
+    }
+}
+
+.header-bar{
+    display: block;
+    width: 22px;
+    z-index: 7;
+    display: none;
+}
+
+.header-bar.active .bar:first-of-type{
+    transform: rotate(45deg) translate(0, 3px);
+}
+
+.header-bar.active .bar:nth-of-type(2){
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header-bar.active .bar:nth-of-type(3){
+    transform: rotate(-45deg) translate(0, -3px);
+}
+
+.bar{
+    width: 22px;
+    height: 2px;
+    background-color: #000000;
+    transition: .3s;
+}
+
+.bar:nth-of-type(1){
+    transform: translate(0, -6px);
+}
+
+.bar:nth-of-type(3){
+    transform: translate(0, 6px);
+}
+
+.fa-calendar-alt{
+    margin-right: 10px;
+}
+
+.modal-wrapper{
+    width:100vw;
+    height: 100%;
+    position: fixed;
+    top:80px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: .3s;
+    z-index: 1000;
+}
+
+.modal-wrapper.active{
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+}
+
+.modal-content{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+
+    &__item{
+        @include text(#000000,16px,center,48px);
+    }
+}
+
+.black-bg{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: none;
+}
+
+.book-wrapper{
+    position: fixed;
+    top:40px;
+    left: 430px;
+    padding: 29px 60px 90px 60px;
+    background-color: #fff;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10001;
+    display: none;
+}
+
+.modal-cansel-btn{
+    position: absolute;
+    top: 20px;
+    right: 22px;
+}
+
+.modal-cansel{
+    width: 18px;
+    height: 18px;
+}
+
+.book-title{
+    @include text(#000000,20px,center,34px);
+    padding-bottom: 32px;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.book-block:first-of-type{
+    margin-top: 25px;
+}
+
+.book-block:last-of-type{
+    margin-bottom: 64px;
+}
+
+.book-block{
+
+    &__title{
+        @include text(#000000,16px,left,27px);
+        margin: 14px 0;
+    }
+
+    &__content{
+        padding: 9px 0 9px 10px;
+        width: 100%;
+        border: solid 1px #e7e7e7;
+    }
+}
+
+.book-btn{
+    @include text(#000000,16px,center,27px);
+    padding: 13px 67px;
+    border: solid 1px #000000;
+    display: inline-block;
+    margin-left: 25%;
+}
+
+.content-title{
+    margin: 0 auto;
+    text-align: center;
+
+    &__logo{
+        margin-bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__text{
+        @include text(#000000,36px,center,32px);
+    }
+}
+
+.top-wrapper{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px
+}
+
+.rooms-top{
+    background-image: url(img/oheya-header.jpg);
+}
+
+.meal-top{
+    background-image: url(img/menu-header.jpg);
+}
+
+.bath-top{
+    background-image: url(img/onsen-header.jpg);
+}
+
+.top-text{
+    @include text(#ffffff,34px,center,42px);
+}
+
+.bottom-wrapper{
+    padding: 37px 0 66px 0;
+}
+
+.bottom-content{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.pankuzu-text{
+    @include text(#000000,16px,left,32px);
+}
+
+.bottom-text{
+    margin: 97px auto 78px auto;
+
+    &__content{
+        @include text(#000000,16px,center,32px);
+    }
+}
+
+.bottom-main{
+
+    &__item{
+        display: flex;
+        margin-bottom: 84px;
+
+        &--img{
+            position: relative;
+            max-width: 525px;
+            max-height: 300px;
+            width: 100%;
+            height: 100%;
+            z-index: 11;
+        }
+
+        &--text{
+            position: relative;
+            padding: 60px 63px 165px 238px;
+            background-image: url(img/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-top: 57px;
+            margin-left: -158px;
+            z-index: 10;
+            max-width: 813px;
+        }
+    }
+
+    &__item:nth-of-type(2){
+        flex-direction: row-reverse
+    }
+}
+
+.reverse{
+    padding: 60px 238px 165px 63px ;
+    margin-right: -158px;
+}
+
+.main-text{
+    &__title{
+        @include text(#000000,24px,left,32px);
+        margin-bottom: 52px;
+    }
+
+    &__content{
+        @include text(#000000,16px,left,32px);
+    }
+}
+
+.last-wrapper{
+    background-image: url(img/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 64px 0 61px 0;
+}
+
+.last-content{
+    &__list{
+        margin-bottom: 96px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        &--item{
+            @include text-v(#000000,18px,left,32px);
+        }
+
+        &--item:not(:nth-of-type(3)){
+            margin-left: 34px;
+        }
+    }
+
+    &__addres{
+
+        &--item{
+            @include text(#000000,18px,center,48px);
+        }
+    }
+}
+
+.last-span{
+    margin-left: 21px;
+}
+
+.last-title{
+    margin-bottom: 72px;
+}
+
+footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black
+}
+
+.footer-text{
+    @include text(#ffffff,12px,center,24px);
+}
+
+.rooms-text{
+    padding-bottom: 89px;
+
+    &__content{
+        margin-top: 52px;
+    }
+}
+
+.bath-wrapper{
+    padding-bottom: 90px;
+}
+
+.bath-content{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 80px 0 60px 0;
+    border-top: solid 1px #e7e7e7;
+    border-bottom: solid 1px #e7e7e7;
+}
+
+.bath-title{
+    margin: 0 auto;
+    margin-bottom: 55px;
+
+    &__content{
+        @include text(#000000,26px,center,32px);
+    }
+}
+
+.bath-list{
+    margin: 0 auto;
+    max-width: 880px;
+    width: 100%;
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px 10px 0;
+        border-top: solid 1px #e7e7e7;
+        border-bottom: solid 1px #e7e7e7;
+
+        &--title{
+            @include text(#000000,15px,left,32px);
+            width: 23%;
+        }
+
+        &--text{
+            @include text(#000000,15px,left,32px);
+            width: 77%;
+        }
+    }
+}

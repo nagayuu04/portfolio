@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="decription" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+    <title>お料理 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/css/swiper.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="shogo2-bottom.css">
+    <link rel="stylesheet" href="shogo2-bottom-responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="infiniteslide.js"></script>
+    <script src="jquery.pause.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  </head>
+  <body>
+    <header class="scroll-bg">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="header-left__logo">
+            <img src="img/logo02.png" class="header-left__logo--img">
+            <p class="header-left__logo--title scroll-title">石井花壇</p>
+          </div>
+          <ul class="header-left__nav">
+            <li class="header-left__nav--item">
+              <a href="/rooms" class="header-left__nav--item--link scroll-text">お部屋</a>
+            </li>
+            <li class="header-left__nav--item">
+              <a href="/meal" class="header-left__nav--item--link scroll-text">お料理</a>
+            </li>
+            <li class="header-left__nav--item">
+              <a href="/bath" class="header-left__nav--item--link scroll-text">温泉</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <a class="header-right__book"><i class="far fa-calendar-alt"></i>宿泊予約</a>
+        </div>
+        <a type="button" class="header-bar">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </a>
+      </div>
+    </header>
+    <section class="modal-wrapper">
+      <div class="modal-content">
+        <a href="" class="modal-content__item">お部屋</a>
+        <a href="" class="modal-content__item">お料理</a>
+        <a href="" class="modal-content__item">風呂</a>
+      </div>
+    </section>
+    <div class="black-bg"></div>
+    <section class="book-wrapper">
+      <div class="book-content">
+        <button type="button" class="modal-cansel-btn"><img src="img/close.png" class="modal-cansel"></button>
+        <p class="book-title">宿泊予約</p>
+        <div class="book-name book-block">
+          <p class="book-name__title book-block__title">お名前</p>
+          <input type="text" class="book-name__text book-block__content" placeholder="例：石井正悟">
+        </div>
+        <div class="book-mail book-block">
+          <p class="book-mail__title book-block__title">メールアドレス</p>
+          <input type="email" class="book-mail__text book-block__content" placeholder="例：Example@example.com">
+        </div>
+        <div class="book-plan book-block">
+          <p class="book-plan__title book-block__title">ご希望プラン(空いているプランのみ表示されます)</p>
+          <select class="book-plan__text book-block__content">
+            <option hidden>プランを選択してください</option>
+            <option>【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+            <option>平日に優雅に楽しむ、特別宿泊プラン</option>
+            <option>絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+          </select>
+        </div>
+        <div class="book-date book-block">
+          <p class="book-date__title book-block__title">日時選択</p>
+          <input class="flatpickr book-date__text book-block__content" type="text" placeholder="日時を選択してください" readonly="readonly">
+        </div>
+        <a href="" class="book-btn">送信する</a>
+      </div>
+    </section>
+    <section class="top-wrapper meal-top">
+        <div class="top-content">
+            <p class="top-text">お料理</p>
+        </div>
+    </section>
+    <section class="bottom-wrapper">
+        <div class="bottom-content">
+            <div class="pankuzu-content" data-aos="fade-up">
+                <p class="pankuzu-text">トップ > お料理</p>
+            </div>
+            <div class="bottom-text" data-aos="fade-up">
+                <p class="bottom-text__content">地元熱海の市場で仕入れた食材のみを使った食材をふんだんに使い、<br>大将の技が光る「熱海料理」<br>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+            </div>
+            <div class="bottom-main">
+                <div class="bottom-main__item">
+                    <img class="bottom-main__item--img" src="img/menu01.jpg" data-aos="fade-up">
+                    <div class="bottom-main__item--text main-text" data-aos="fade-up">
+                        <p class="main-text__title">地元食材にこだわった会席料理</p>
+                        <p class="main-text__content">みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。 旬の素材をそのままに生かす、経験に裏打ちされた確かな技。 四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+                    </div>
+                </div>
+                <div class="bottom-main__item">
+                    <img class="bottom-main__item--img" src="img/menu02.jpg" data-aos="fade-up">
+                    <div class="bottom-main__item--text main-text reverse" data-aos="fade-up">
+                        <p class="main-text__title">熱海の漁港で目利きの品を</p>
+                        <p class="main-text__content">石井花壇でお出しする料理はすべて料理長である大将の目利きで、 熱海の魚市場でその日のうちに仕入れたものを使用しております。 日本海の宝玉を十分にお楽しみください。</p>
+                    </div>
+                </div>
+                <div class="bottom-main__item">
+                    <img class="bottom-main__item--img" src="img/menu03.jpg" data-aos="fade-up">
+                    <div class="bottom-main__item--text main-text" data-aos="fade-up">
+                        <p class="main-text__title">食材が一流、職人も一流</p>
+                        <p class="main-text__content">石井花壇の料理人は料亭で20年経験を積んだものばかり。 その時の最も旬な食材を、最高の調理でお届けします。 また、お料理への細かいご要望にもお答えできますので、 お気軽にお申し付けください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="last-wrapper">
+        <div class="last-content">
+          <div class="last-content__list">
+            <a href="rooms/" class="last-content__list--item">お部屋</a>
+            <a href="meal/" class="last-content__list--item">お料理</a>
+            <a href="bath/" class="last-content__list--item">温泉</a>
+          </div>
+          <div class="last-title content-title">
+            <img src="img/logo02.png" class="content-title__logo">
+            <p class="content-title__text">石井花壇</p>
+          </div>
+          <div class="last-content__addres">
+            <p class="last-content__addres--item">〒000-0000<span class="last-span">山形県鶴岡市xxxxxxxxxxx</span></p>
+            <p class="last-content__addres--item">山形県鶴岡市xxxxxxxxxxx<span class="last-span">FAX.00-0000-0000</span></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p class="footer-text">Copyright © 石井花壇 All Rights Reserved.</p>
+      </footer>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="shogo2-bottom.js"></script>
+  </body>
+</html>
