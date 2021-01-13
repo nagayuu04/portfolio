@@ -1,3 +1,5 @@
+$(function(){
+
 $(window).scroll(function() {
     if($(this).scrollTop()>0){
         $(".scroll-bg").css("background-color","white");
@@ -61,7 +63,11 @@ $(window).scroll(function() {
         $(".black-bg").fadeOut();
     })
     
+    
+});
+    
     AOS.init({
     duration:2000
 });
-});
+  
+})
