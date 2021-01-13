@@ -1,0 +1,423 @@
+@media all and (max-width: 1190px) {
+    .header-left p,.header-right a{
+        font-size: 12px;
+    }
+
+    .top-title h1{
+        font-size: 24px;
+    }
+
+    .top-text p{
+        font-size: 16px;
+    }
+
+    .boshu-text1 p{
+        font-size: 16px;
+    }
+
+    .boshu-text2 p{
+        font-size: 14.4px;
+    }
+
+    .boshu-btn a,.boshu-text3 p{
+        font-size: 18px;
+    }
+
+    .boshu-btn{
+        margin: 10px 80px;
+        padding: 25px 50px;
+    }
+
+    .content-title h2{
+        font-size: 24px;
+    }
+
+    .about1-text{
+        font-size: 16px;
+    }
+
+    .brsp{
+        display: none;
+    }
+
+    .about2-text,.about2-text2{
+        font-size: 16px;
+    }
+
+    .textl h2{
+        font-size: 24px;
+    }
+
+    .textm{
+        font-size: 16px;
+    }
+
+    .textm p{
+        font-size: 16px;
+    }
+
+    .step-number,.step-text{
+        font-size: 14px;
+    }
+
+    .step-length{
+        font-size: 12px;
+    }
+
+    .step-list{
+        flex-direction:column;
+    }
+
+    .step-list-item{
+        margin: 10px auto;
+    }
+
+    .learn-text p{
+        font-size: 16px;
+    }
+
+    .texts-bold{
+        font-size: 14px;
+    }
+
+    .merit-wrapper .textxs{
+        margin: 0 auto;
+        width: calc(100% - 40px);
+        max-width: 1200px;
+    }
+
+    .a-content{
+        margin-left: 0;
+    }
+
+    .content-list-item{
+        width: 265px;
+    }
+
+    .content-list-item .textm{
+        font-size: 16px;
+    }
+
+    .content-list-item p{
+        font-size: 14px;
+    }
+
+    .learn-step-wrapper{
+        padding: 20px 40px;
+    }
+
+    .bankoku-wrapper{
+        padding: 40px;
+    }
+
+    .bankoku-text{
+        font-size: 12px;
+    }
+
+    .bankoku-list li{
+        font-size: 14px;
+    }
+    
+    .bankoku-text-bold{
+        font-size: 16px;
+    }
+
+    .present-box{
+        width: auto;
+    }
+
+    .question-item-q p{
+        font-size: 16px;
+    }
+
+    .question-item-a p{
+        font-size: 14px;
+    }
+
+@media all and (max-width: 990px){
+    .merit-list{
+        display: block;
+    }
+
+    .merit-list-item{
+        margin: 0 auto;
+        width: calc(100% - 190px);
+        max-width: 1170px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .merit-list-img{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .merit-list-text{
+        text-align: left;
+    }
+
+    .member-list{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .member-list-item{
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .member-list-item img{
+        text-align: center;
+        
+    }
+
+    .member-prof{
+        width: calc(100%-40px);
+        max-width: 1200px;
+    }
+
+    .a-content{
+        margin-left: 10px;
+    }
+
+    .a-content-text{
+        width: 100%;
+    }
+    
+    .a-content-text p{
+        width: 100%;
+    }
+
+    .content-list{
+        display: block;
+    }
+
+    .content-list-item{
+        width: 620px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .present-box-title{
+        right: 15%;
+    }
+
+    .present-box-item{
+        margin: 0 auto;
+    }
+
+    .present-box-content{
+        display: block;
+    }
+
+    .ceo-content{
+        display: block;
+    }
+
+    .ceo-content img{
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 769px) {
+    .header-right2{
+        display: block;
+    }
+
+    .header-left{
+        flex-direction:column-reverse;
+        margin-top: -30px;
+    }
+
+    .header-left p{
+        font-size: 10px;
+    }
+
+    .header-right{
+        display: none;
+    }
+
+    .top-title h1{
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .top-text p{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .top-content img{
+        margin: 20px;
+    }
+
+    .boshu-text1 p{
+        font-size: 15px;
+    }
+
+    .boshu-text2 p{
+        font-size: 13.5px;
+    }
+
+    .boshu-btn a{
+        font-size: 20px;
+    }
+
+    .boshu-br{
+        display: block;
+    }
+
+    .boshu-text3 p{
+        font-size: 15px;
+    }
+
+    .boshu-btn{
+        margin: 25px 20px 10px;
+        padding: 15px 20px;
+    }
+
+    .brsp{
+        display: block;
+    }
+
+    .content-title h2{
+        font-size: 18px;
+    }
+
+    .about1-text{
+        font-size: 15px;
+    }
+
+    .about2-text,.about2-text2{
+        font-size: 15px;
+    }
+
+    .textl h2{
+        font-size: 18px;
+    }
+
+    .textm{
+        font-size: 13px;
+    }
+
+    .textm p{
+        font-size: 13px;
+    }
+
+    .step-number,.step-text{
+        font-size: 12px;
+    }
+
+    .step-list-item{
+        width: calc(100% - 20px);
+        max-width: 500px;
+    }
+
+    .step-wrapper{
+        padding: 30px;
+    }
+
+    .learn-text p{
+        font-size: 15px;
+    }
+
+    .texts-bold{
+        font-size: 12px;
+    }
+
+    .learn-list img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .merit-list{
+        display: block;
+    }
+
+    .merit-list-item{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin: 0 auto;
+    }
+
+    .merit-list-title{
+        font-size: 15px;
+    }
+
+    .merit-list-img{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .merit-list-text{
+        text-align: left;
+        width: 90%;
+        margin: 0 auto 30px auto;
+        font-size: 12px;
+    }
+
+    .merit-wrapper .textxs{
+        margin: 0 auto;
+        width: calc(100% - 40px);
+        max-width: 1200px;
+    }
+
+    .content-list-item{
+        width: 96%;
+    }
+
+    .learn-step-content{
+        display: none;
+    }
+
+    .flow-line-img{
+        display: none;
+    }
+
+    .question-content{
+        text-align: left;
+        max-width: calc(100% - 40px);
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .question-content2{
+        display: block;
+    }
+
+    .bankoku-wrapper{
+        padding: 20px 15px;
+    }
+
+    .why-content{
+        text-align: center;
+    }
+
+    .bankoku-text,.bankoku-list li{
+        font-size: 12px;
+    }
+
+    .bankoku-text-bold{
+        font-size: 15px;
+    }
+
+    .present-box-title{
+        right: 10%;
+    }
+
+    .question-item-q p{
+        font-size: 15px;
+    }
+
+    .question-item-a p{
+        font-size: 12px;
+    }
+
+    .question-content{
+        width: 100%;
+    }
+
+}
