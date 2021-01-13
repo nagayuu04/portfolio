@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORK</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="STORK.css">
+    <link rel="stylesheet" href="STORK-responsive.css">
+    <link href="../slick-1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="../slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="STORK-js.js"></script>
+  </head>
+  <body>
+     <header>
+         <div class="header-content">
+            <div class="bar">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                    <p class="textxxs bold">menu</p>
+                </a>
+            </div>
+             <div class="header-left">
+                 <a href="" class="textxl site-title bold">STORK</a>
+             </div>
+             <div class="header-right">
+                 <ul class="header-nav">
+                     <li class="header-nav-item item1">
+                         <a href="" class="hrader-nav-link">
+                             <p class="textxs bold">カテゴリー</p>
+                             <p class="textxxs bold">Category</p>
+                         </a>
+                         <ul class="header-nav-sec1">
+                            <li class="header-nav-sec-item">
+                               <a href="" class="textxs">カテゴリー01</a>
+                            </li>
+                            <li class="header-nav-sec-item item-sec1">
+                               <a href="" class="textxs">カテゴリー02</a>
+                               <ul class="header-nav-thi1">
+                                <li class="header-nav-sec-item">
+                                    <a href="" class="textxs">レベル3</a>
+                                </li>
+                                <li class="header-nav-sec-item">
+                                    <a href="" class="textxs">レベル2a</a>
+                                </li>
+                                <li class="header-nav-sec-item">
+                                    <a href="" class="textxs">レベル2b</a>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class="header-nav-sec-item">
+                               <a href="" class="textxs">投稿サンプル</a>
+                            </li>
+                            <li class="header-nav-sec-item">
+                               <a href="" class="textxs">トピックス</a>
+                            </li>
+                         </ul>
+                     </li>
+                     <li class="header-nav-item">
+                        <a href="" class="hrader-nav-link">
+                            <p class="textxs bold">当サイトについて</p>
+                            <p class="textxxs bold">AboutMe</p>
+                        </a>
+                     </li>
+                     <li class="header-nav-item">
+                        <a href="" class="hrader-nav-link">
+                            <p class="textxs bold">固定ページ文章例</p>
+                            <p class="textxxs bold">PageColumn</p>
+                        </a>
+                     </li>
+                     <li class="header-nav-item">
+                        <a href="" class="hrader-nav-link">
+                            <p class="textxs bold">ワンカラム固定ページ</p>
+                            <p class="textxxs bold">OneColumn</p>
+                        </a>
+                     </li>
+                     <li class="header-nav-item item5">
+                        <a href="" class="hrader-nav-link">
+                            <p class="textxs bold">レベル1</p>
+                            <p class="textxxs bold">Level1</p>
+                        </a>
+                        <ul class="header-nav-sec2">
+                            <li class="header-nav-sec-item  item-sec5">
+                                <a href="" class="textxs">レベル2</a>
+                                <ul class="header-nav-thi2">
+                                    <li class="header-nav-sec-item">
+                                        <a href="" class="textxs">レベル3</a>
+                                    </li>
+                                    <li class="header-nav-sec-item">
+                                        <a href="" class="textxs">レベル2a</a>
+                                    </li>
+                                    <li class="header-nav-sec-item">
+                                        <a href="" class="textxs">レベル2b</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                     </li>
+                     <li class="header-nav-item">
+                        <a href="" class="hrader-nav-link">
+                            <p class="textxs bold">ランディングページ</p>
+                            <p class="textxxs bold">LANDING PAGE</p>
+                        </a>
+                     </li>
+                 </ul>
+                 <div class="search-box">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                        <p class="textxxs bold">search</p>
+                    </a>
+                 </div>
+             </div>
+         </div>
+     </header>
+     <div class="bg"></div>
+     <div class="search-window">
+         <p class="textm">キーワードで記事を検索する</p>
+         <input type="search" placeholder="検索する"><i class="fas fa-search"></i>
+         <a href="" class="textm bold fadeout"><i class="fas fa-times"></i>CLOSE</a>
+     </div>
+     <div class="bg2"></div>
+     <div class="menu-window">
+         <div class="fadeout2">
+           <a href="" class="textm bold fadeout"><i class="fas fa-times"></i>CLOSE</a>
+         </div>
+         <div class="main-right-item">
+            <p class="textm bold right-item-title">メニュー</p>
+            <div class="right-post-item">
+              <a href="" class="text-only">
+                <div class="post-item-text-only">
+                    <p class="texts text">当サイトについて</p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="right-post-item">
+              <a href="" class="text-only">
+                <div class="post-item-text-only">
+                    <p class="texts text">ワンカラム固定ぺージ</p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="right-post-item">
+              <a href="" class="text-only">
+                <div class="post-item-text-only">
+                    <p class="texts text">ワンカラム投稿ぺージ</p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="right-post-item">
+              <a href="" class="text-only">
+                <div class="post-item-text-only">
+                    <p class="texts text">バイラル風投稿ぺージ</p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="right-post-item">
+                <a href="" class="text-only">
+                  <div class="post-item-text-only">
+                      <p class="texts text">カテゴリー01</p>
+                  </div>
+                  <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="right-post-item">
+                <a href="" class="text-only">
+                  <div class="post-item-text-only">
+                      <p class="texts text">カテゴリー02</p>
+                  </div>
+                  <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="right-post-item">
+                <a href="" class="text-only">
+                  <div class="post-item-text-only">
+                      <p class="texts text">トピックス</p>
+                  </div>
+                  <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="right-post-item">
+                <a href="" class="text-only">
+                  <div class="post-item-text-only">
+                      <p class="texts text">固定ページ:画像の配置</p>
+                  </div>
+                  <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="main-right-item">
+            <p class="textm bold right-item-title">テキストをどうぞ</p>
+            <div class="fukidasi">
+                <div class="img-content">
+                    <img src="img/10247814_421987717957146_7219859436076224289_n-150x150.jpg">
+                    <p class="textxs">JUNICHIII</p>
+                </div>
+                <div class="fukidasi-content">
+                    <div class="tri"></div>
+                    <div class="fukidasi-block">
+                        <p class="texts">テキスト好きに書きやがれ！ ウィジェットがメニューになるなんて活気的ね♪</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right-item">
+            <p class="textm bold right-item-title">タグから探しやがれ！</p>
+            <div class="tag-content">
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+            </div>
+        </div>
+        <div class="main-right-item menu-new-post">
+            <p class="textm bold right-item-title">新着記事だぜ</p>
+            <div class="right-post-item">
+              <a href="">
+                <img src="img/c5c9800b19f254abe61684ef84e80619-1-486x290.jpg">
+                <div class="post-item-text">
+                    <p class="texts text">テンプレート: 先頭固定表示<span class="textxs bold">2012.01.07</span></p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="right-post-item">
+              <a href="">
+                <img src="img/13c1579ea5443dc8e6655bad2a25eb01-486x290.jpg">
+                <div class="post-item-text">
+                    <p class="texts text">「アコーディオン」ショートコード表示サンプル<span class="textxs bold">2012.01.07</span></p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="right-post-item">
+              <a href="">
+                <img src="img/thema-486x290.jpg">
+                <div class="post-item-text">
+                    <p class="texts text">新機能あり（v1.2.3~）関連記事ショートコードの記載例（オプションも）<span class="textxs bold">2012.01.07</span></p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+            <div class="right-post-item">
+              <a href="">
+                <img src="img/e8cf1ee71cf42a501d09c9cf44726a93-486x290.jpg">
+                <div class="post-item-text">
+                    <p class="texts text">「ボックス」ショートコード表示サンプル<span class="textxs bold">2012.01.07</span></p>
+                </div>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+        </div>
+        <div class="fadeout2">
+          <a href="" class="textm bold fadeout"><i class="fas fa-times"></i>CLOSE</a>
+        </div>
+     </div>
+     <div class="top-wrapper">
+         <div class="top-content">
+             <p class="textxl bold">Happy WordPress Blog</p>
+             <p class="textxs bold sub-title">幸せを運ぶWordPressテーマ「ストーク (こうのとり)」</p>
+             <a href="" class="texts bold">テーマ詳細ページへ</a>
+         </div>
+     </div>
+     <div class="slider-wrapper">
+         <div class="slider-content">
+             <ul class="slider">
+                 <li class="slider-item">
+                     <a href="">
+                         <p class="textxxs bold">カテゴリー01</p>
+                         <img src="img/c5c9800b19f254abe61684ef84e80619-1-486x290.jpg">
+                         <p class="texts bold">テンプレート:先頭固定表示</p>
+                     </a>
+                 </li>
+                 <li class="slider-item">
+                    <a href="">
+                        <p class="textxxs bold">カテゴリー01</p>
+                        <img src="img/36e74257c2ed68ab6ff9e60bf25125d0-486x290.jpg">
+                        <p class="texts bold">極端な例: たくさんのタグをつけた投稿の表示テスト</p>
+                    </a>
+                 </li>
+                 <li class="slider-item">
+                    <a href="">
+                        <p class="textxxs bold">投稿サンプル</p>
+                        <img src="img/7a8ffa3eb0482fe82c3fca112b9a7f57-486x290.jpg">
+                        <p class="texts bold">バイラルメディア風で「フルサイズアイキャッチ画像」のワンカラム投稿</p>
+                    </a>
+                 </li>
+                 <li class="slider-item">
+                    <a href="">
+                        <p class="textxxs bold">トピックス</p>
+                        <img src="img/1826c90a5bf1fe510b440d751d700009-486x290.png">
+                        <p class="texts bold">記事一覧ページのレイアウト</p>
+                    </a>
+                 </li>
+                 <li class="slider-item">
+                    <a href="">
+                        <p class="textxxs bold">PICK UP</p>
+                        <img src="img/6eaf60f6f1b03029326f2327d4d91a25-486x290.jpg">
+                        <p class="texts bold">ワンカラム固定ページ</p>
+                    </a>
+                 </li>
+                 <li class="slider-item">
+                    <a href="">
+                        <p class="textxxs bold">カテゴリー01</p>
+                        <img src="img/c205ab9732ced62604db7d28ca54bf5f-486x290.jpg">
+                        <p class="texts bold">WordPress標準機能：ギャラリーの表示サンプル</p>
+                    </a>
+                 </li>
+                 <li class="slider-item">
+                    <a href="">
+                        <p class="textxxs bold">カテゴリー02</p>
+                        <img src="img/7b7ed12bc3e878548e368c03ab56626a-486x290.jpg">
+                        <p class="texts bold">各種サービス（Twitter / YouTube / etc）埋め込み表示</p>
+                    </a>
+                 </li>
+                 <li class="slider-item">
+                    <a href="">
+                        <p class="textxxs bold">トピックス</p>
+                        <img src="img/4cdc2982d40517f8a14419a33686ad58-486x290.jpg">
+                        <p class="texts bold">Twitterソーシャルボタンに「@ユーザー名」を追加したい</p>
+                    </a>
+                 </li>
+                 <li class="slider-item">
+                    <a href="">
+                        <p class="textxxs bold">トピックス</p>
+                        <img src="img/fd0929e494c747302c1723197aec2f06-486x290.jpg">
+                        <p class="texts bold">ランディングページが404になってしまって表示されない</p>
+                    </a>
+                 </li>
+             </ul>
+         </div>
+     </div>
+     <div class="main-wrapper">
+         <div class="main-content">
+             <div class="main-left">
+                 <div class="top-wejet wejet-box">
+                     <img src="img/add_728_90.jpg">
+                     <p class="texts">【トップページ用ウィジェット上部】ここにいろいろと追記できます。AdSenseコードをはってもいいですね。</p>
+                 </div>
+                 <div class="main-post">
+                     <div class="main-post-item">
+                         <div class="main-post-img">
+                             <p class="textxxs bold">カテゴリー01</p>
+                             <img src="img/c5c9800b19f254abe61684ef84e80619-1-486x290.jpg">
+                         </div>
+                         <div class="main-post-text">
+                             <p class="textl bold">テンプレート: 先頭固定表示</p>
+                             <p class="textxxs bold"><i class="far fa-calendar-check"></i>2012.01.07</p>
+                             <p class="texts">先頭固定表示投稿です。 記事一覧の先頭行に固定した投稿です。常にトップに特定の記事を表示させたい場合に設定しておくとよいでしょう。 設定方法 投稿画面の「公開状態 ＞ 編集」から「この投稿を先頭に固定表示」にチェッ…</p>
+                         </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">ショートコード</p>
+                            <img src="img/13c1579ea5443dc8e6655bad2a25eb01-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">「アコーディオン」ショートコード表示サンプル</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2019.11.13</p>
+                            <p class="texts">ショートコードで簡単にアコーディオン（開閉式のコンテンツ）を表示可能です。 実際の表示例 「アコーディオンタイトル」という箇所をクリック（もしくはタップ）すればその下の隠れていたコンテンツが表示されます。 表示にはCSS…</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">ショートコード</p>
+                            <img src="img/thema-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">新機能あり（v1.2.3~）関連記事ショートコードの記載例（オプションも）</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2019.01.30</p>
+                            <p class="texts">関連記事ショートコードの表示テストです。2019/01/30に固定ページの表示にも対応しました。 投稿ページへのリンク 関連記事をショートコードで表示します。 ▼ 記載方法 上記の「記事のIDをここへ」という箇所を、リン…</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">ショートコード</p>
+                            <img src="img/e8cf1ee71cf42a501d09c9cf44726a93-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">「ボックス」ショートコード表示サンプル</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2017.09.25</p>
+                            <p class="texts">ストークのv1.1.3で追加されたボックスショートコードの表示サンプルページです。 これまで注意書きや補足用のショートコードはありましたが、今回のボックスショートコードを使えばより表現の幅が広がります。 タイトル（ラベル…</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">投稿サンプル</p>
+                            <img src="img/7a8ffa3eb0482fe82c3fca112b9a7f57-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">バイラルメディア風で「フルサイズアイキャッチ画像」のワンカラム投稿</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2016.04.21</p>
+                            <p class="texts">バイラルメディア風のレイアウトの記事サンプルです。PCで見た時が一番恩恵があります。</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">トピックス</p>
+                            <img src="img/Facebook-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">記事下のFacebookページのいいねボタンを設置可能</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2015.11.11</p>
+                            <p class="texts">オプションでFacebookページへのいいねボタンを表示することができます。表示場所は投稿記事の下部分。下のSNSボタンの直前に表示されるようになります。 設定方法も簡単で、【外観 > カスタマイズ > 投稿…</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">トピックス</p>
+                            <img src="img/1826c90a5bf1fe510b440d751d700009-486x290.png">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">記事一覧ページのレイアウト</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2015.11.11</p>
+                            <p class="texts">ストークでは記事一覧ページのレイアウトを4種類の中からお選びいただけます。 トップページとそれ以外の記事一覧ページのレイアウトをお選びいただけます。 管理画面の、【外観 > カスタマイズ】の「記事一覧ページ設定」よ…</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">カテゴリー01</p>
+                            <img src="img/9df9273a5f9da7d4ef4f5b7f7e1c5a03-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">横幅いっぱいの投稿ページサンプル</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2015.11.01</p>
+                            <p class="texts">横幅いっぱいの記事ページを作成することができます。 ショートコードももちろん使える 通常の投稿ページや固定ページ同様、ショートコードもちゃんとつかえるので、HTMLがわからないという方でも様々な表現が可能です。 カラムレ…</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">カテゴリー01</p>
+                            <img src="img/c205ab9732ced62604db7d28ca54bf5f-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">WordPress標準機能：ギャラリーの表示サンプル</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2015.06.06</p>
+                            <p class="texts">WordPress標準機能ギャラリーの表示例です。 2列表示 3列表示 4列表示 5列表示 7列表示</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">カテゴリー02</p>
+                            <img src="img/7b7ed12bc3e878548e368c03ab56626a-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">各種サービス（Twitter / YouTube / etc）埋め込み表示</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2015.06.04</p>
+                            <p class="texts">WordPressの標準機能としてURLを入力するだけでYouTubeやTwitterなどのパーツを埋め込むことができます。 Twitterの埋め込み パフェを多く見せるためのシリアルはいらない派です。 — …</p>
+                        </div>
+                     </div>
+                     <div class="main-post-item">
+                        <div class="main-post-img">
+                            <p class="textxxs bold">トピックス</p>
+                            <img src="img/4cdc2982d40517f8a14419a33686ad58-486x290.jpg">
+                        </div>
+                        <div class="main-post-text">
+                            <p class="textl bold">Twitterソーシャルボタンに「@ユーザー名」を追加したい</p>
+                            <p class="textxxs bold"><i class="far fa-calendar-check"></i>2015.05.27</p>
+                            <p class="texts">ソーシャルボタンのカスタマイズに関してですが、基本的にそのままでもお使いいただけるのですが、Twitterでつぶやかれた際にTwitter投稿内に「@ユーザー名さんから」というのを入れる方法です。 アルバトロスでは投稿し…</p>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="change-btn">
+                     <div class="change-btn-content">
+                         <a href="" class="texts btn1">1</a>
+                         <a href="" class="texts btn2">2</a>
+                         <a href="" class="texts btn3">3</a>
+                         <a href="" class="texts btnangle">></a>
+                     </div>
+                 </div>
+                 <div class="bottom-wijet wejet-box">
+                     <img src="img/add_728_90.jpg">
+                     <p class="texts">【トップページ用ウィジェット下部】ここにいろいろと追記できます。AdSenseコードをはってもいいですね。</p>
+                 </div>
+             </div>
+             <div class="main-right">
+                 <img src="img/add_336_280.jpg" class="add336">
+                 <div class="search-content">
+                   <input type="search" placeholder="検索する" class="search-box2">
+                   <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="main-right-item">
+                    <p class="textm bold right-item-title">最近の記事（画像付き）</p>
+                    <div class="right-post-item">
+                      <a href="">
+                        <img src="img/c5c9800b19f254abe61684ef84e80619-1-486x290.jpg">
+                        <div class="post-item-text">
+                            <p class="texts text">テンプレート: 先頭固定表示<span class="textxs bold">2012.01.07</span></p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="">
+                        <img src="img/13c1579ea5443dc8e6655bad2a25eb01-486x290.jpg">
+                        <div class="post-item-text">
+                            <p class="texts text">「アコーディオン」ショートコード表示サンプル<span class="textxs bold">2012.01.07</span></p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="">
+                        <img src="img/thema-486x290.jpg">
+                        <div class="post-item-text">
+                            <p class="texts text">新機能あり（v1.2.3~）関連記事ショートコードの記載例（オプションも）<span class="textxs bold">2012.01.07</span></p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="">
+                        <img src="img/e8cf1ee71cf42a501d09c9cf44726a93-486x290.jpg">
+                        <div class="post-item-text">
+                            <p class="texts text">「ボックス」ショートコード表示サンプル<span class="textxs bold">2012.01.07</span></p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                </div>
+                <div class="main-right-item">
+                    <p class="textm bold right-item-title">最近の記事（テキスト）</p>
+                    <div class="right-post-item">
+                      <a href="" class="text-only">
+                        <div class="post-item-text-only">
+                            <p class="texts text">「アコーディオン」ショートコード表示サンプル</p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="" class="text-only">
+                        <div class="post-item-text-only">
+                            <p class="texts text">新機能あり（v1.2.3~）関連記事ショートコードの記載例（オプションも）</p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="" class="text-only">
+                        <div class="post-item-text-only">
+                            <p class="texts text">「ボックス」ショートコード表示サンプル</p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="" class="text-only">
+                        <div class="post-item-text-only">
+                            <p class="texts text">バイラルメディア風で「フルサイズアイキャッチ画像」のワンカラム投稿</p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                        <a href="" class="text-only">
+                          <div class="post-item-text-only">
+                              <p class="texts text">記事下のFacebookページのいいねボタンを設置可能</p>
+                          </div>
+                          <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-right-item">
+                    <p class="textm bold right-item-title">Tag</p>
+                    <div class="tag-content">
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                        <a href="" class="texts">タグ</a>
+                    </div>
+                </div>
+                <div class="main-right-item">
+                    <p class="textm bold right-item-title">アーカイブ</p>
+                    <select class="archive-box">
+                        <option>月を選択</option>
+                        <option>2020年12月</option>
+                        <option>2020年11月</option>
+                        <option>2020年10月</option>
+                        <option>2020年9月</option>
+                        <option>2020年8月</option>
+                        <option>2020年7月</option>
+                        <option>2020年6月</option>
+                        <option>2020年5月</option>
+                        <option>2020年4月</option>
+                        <option>2020年3月</option>
+                        <option>2020年2月</option>
+                        <option>2020年1月</option>
+                    </select>
+                </div>
+                <div class="main-right-item">
+                    <p class="textm bold right-item-title">カテゴリー</p>
+                    <div class="right-post-item">
+                      <a href="" class="text-only">
+                        <div class="post-item-text-only">
+                            <p class="texts text">カテゴリー01(6)</p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="" class="text-only">
+                        <div class="post-item-text-only">
+                            <p class="texts text">カテゴリー02(7)</p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="" class="text-only">
+                        <div class="post-item-text-only">
+                            <p class="texts text">ショートコード(4)</p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                      <a href="" class="text-only">
+                        <div class="post-item-text-only">
+                            <p class="texts text">トピックス(6)</p>
+                        </div>
+                        <i class="fas fa-angle-right"></i>
+                      </a>
+                    </div>
+                    <div class="right-post-item">
+                        <a href="" class="text-only">
+                          <div class="post-item-text-only">
+                              <p class="texts text">投稿サンプル(18)</p>
+                          </div>
+                          <i class="fas fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-right-item">
+                    <p class="textm bold right-item-title">スマホで表示</p>
+                    <div class="qr-content">
+                      <img src="img/STORK-QR_Code.gif" class="qrcode">
+                      <p class="texts text">ストークではユーザーエージェントを使用しておりますので、スマートフォンでは一部表示が異なる場合がございます。実機を使ってのご確認を推奨しております。</p>
+                    </div>
+                </div>
+                <div class="main-right-item">
+                    <p class="textm bold right-item-title">テーマの紹介</p>
+                    <div class="theme-content">
+                      <p class="texts text">テーマの紹介ページはこちらから！</p>
+                      <img src="img/3a131b872188665e98f650506c292c29.png">
+                      <a href="" class="texts text">ストークの紹介</a>
+                    </div>
+                </div>
+                <div class="right-bottom-wejet">
+                    <img src="img/add_336_280.jpg" class="add336">
+                    <p class="texts text">【追従型広告】AdSenseを貼るのは規約違反となるのでご注意</p>
+                </div>
+             </div>
+         </div>
+     </div>
+     <footer>
+      <div class="footer-wrapper">
+         <div class="footer-left footer-content">
+            <p class="textm bold footer-left-title">Tags</p>
+            <div class="tag-content2">
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+                <a href="" class="texts">タグ</a>
+            </div>
+         </div>
+         <div class="footer-center footer-content">
+          <div class="center-top">
+            <p class="textm bold footer-center-title">Category</p>
+            <select class="category-box text">
+                <option>カテゴリーを選択</option>
+                <option>カテゴリー01</option>
+                <option>カテゴリー02</option>
+                <option>カテゴリー02-a</option>
+                <option>カテゴリー02-b</option>
+                <option>カテゴリー02-c</option>
+                <option>ショートコード</option>
+                <option>トピックス</option>
+                <option>投稿サンプル</option>
+            </select>
+          </div>
+          <div class="center-bottom">
+            <p class="textm bold footer-center-title">Archives</p>
+            <select class="archive-box2 text">
+                <option>月を選択</option>
+                <option>2020年12月</option>
+                <option>2020年11月</option>
+                <option>2020年10月</option>
+                <option>2020年9月</option>
+                <option>2020年8月</option>
+                <option>2020年7月</option>
+                <option>2020年6月</option>
+                <option>2020年5月</option>
+                <option>2020年4月</option>
+                <option>2020年3月</option>
+                <option>2020年2月</option>
+                <option>2020年1月</option>
+            </select>
+          </div>
+         </div>
+         <div class="footer-right footer-content">
+            <p class="textm bold footer-right-title">About Us</p>
+            <img src="img/logo.png">
+            <p class="textm">STORKはブログ専用のWordPressテーマです。AdSenseコードの挿入やCTA（コールトゥーアクション）などビジネスブログにおける必要不可欠な要素が最初から用意されているので、サイト構築に詳しくない方でも簡単に「誰が使っても美しいサイト」を構築できます。<br><br>またデザインもカスタマイザーから多種多様に変更できるので簡単に差別化が可能です。</p>
+         </div>
+      </div>
+      <div class="footer-last-text">
+        <div class="footer-bottom-left">
+            <a href="" class="texts">お問い合わせ(表示デモ)</a>
+            <p class="texts">　|　</p>
+            <a href="" class="texts">プライバシーポリシー</a>
+        </div>
+        <div class="footer-bottom-right">
+            <p class="texts">©Copyright2020 STORK.All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="STORK.js"></script>
+  </body>
+</html>
