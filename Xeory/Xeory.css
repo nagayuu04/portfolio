@@ -1,0 +1,568 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.textxxl{
+    font-size: 48px;
+}
+
+.textxl{
+    font-size: 40px;
+}
+
+.textl{
+    font-size: 36px;
+}
+
+.textm{
+    font-size: 28px;
+}
+
+.texts{
+    font-size: 24px;
+}
+
+.textxs{
+    font-size: 16px;
+}
+
+.textxxs{
+    font-size: 14px;
+}
+
+.textxxxs{
+    font-size: 12px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+header{
+    height: 90px;
+    width: 100%;
+    background-color: #48B49E;
+}
+
+.header-content{
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-left p{
+    color: white;
+}
+
+.header-left p:hover{
+    text-decoration: underline;
+}
+
+.header-nav{
+    display: flex;
+}
+
+.header-right2{
+    padding: 30px;
+    color: white;
+    background-color: #3B4652;
+    display: none;
+}
+
+.header-right2 i{
+    font-size: 30px;
+}
+
+.header-nav-item{
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+.header-nav-item:hover{
+    background-color: #57bca8;
+    transition: 0.5s;
+}
+
+.header-nav-item a{
+    color: white;
+    line-height: 90px;
+}
+
+.top-wrapper{
+    background-color: #41B29D;
+    height: 640px;
+    margin: 0 auto;
+}
+
+.top-content{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 216px;
+    
+}
+
+.top-content p{
+    color: white;
+}
+
+.top-content .textxxl{
+    
+    margin-bottom: 30px;
+}
+
+.top-content .textxxs{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.post-wrapper{
+    background-image: url(img/bg.png);
+    background-size: cover;
+    padding: 27px 0;
+}
+
+.post-content{
+    background-color: #fff;
+    border: solid 1px #E5E5E5;
+    margin: 27px 0;
+}
+
+.post-content-title{
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: solid 1px #E5E5E5;;
+}
+
+.post-content ul{
+    display: flex;
+    justify-content: center;
+    margin: 42px 30px 76px 30px;
+}
+
+.post-content ul li{
+    margin: 0 14px;
+    position: relative;
+}
+
+
+.post-number{
+    position: absolute;
+    padding: 16px 6px;
+    color: white;
+    opacity: 0.7;
+    
+}
+
+
+
+.post-number1{
+    background-color: #E2C778;
+}
+
+.post-number2{
+    background-color: #A6A9AE;
+}
+
+.post-number3{
+    background-color: #875037;
+}
+
+.post-number4{
+    background-color: #60472E;
+}
+
+.post-number5{
+    background-color: #463F2D;
+}
+
+.post-date{
+    position: absolute;
+    padding: 9px 2px;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+    background-color: #33333C;
+}
+
+.category-number{
+    background-color: #48B49E;
+    padding: 12px 22px;
+    margin: 14px 0;
+    color: white;
+    display: inline-block;
+}
+
+.post-text{
+    color: black;
+}
+
+.div-wrapper{
+    padding: 15px 0 26px 0;
+    background-color: #3b4652;
+}
+
+.div-content{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.div-content p{
+    color: white;
+}
+
+.div-content .textm{
+    margin: 14px 0 8px 0;
+}
+
+.div-tri{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 22px 56px 0 56px;
+    border-color: #3b4652 transparent transparent transparent;
+    line-height: 0px;
+    _border-color: #3b4652 #000000 #000000 #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    margin:0 auto;
+}
+
+.feature-wrapper{
+    margin-top: -22px;
+}
+
+.feature-content{
+    display: flex;
+}
+
+.feature-text-content{
+    width: 52%;
+    padding: 0 98px 0 120px;
+}
+
+.feature-img{
+    width: 48%;
+}
+
+.res{
+    display: none;
+}
+
+.feature-number{
+    display: inline-block;
+    padding: 42px 13px 13px;
+    background-color: #48B49E;
+    color: white;
+}
+
+.feature-title,.feature-title-en{
+    color: #41B29D;
+}
+
+.feature-title{
+    margin: 38px 0 16px 0;
+}
+
+.feature-text{
+    margin: 38px 0 50px 0;
+}
+
+.feature-text-content a{
+    padding: 14px 60px;
+    background-color: #FD6C03;
+    border-radius: 5px;
+    color: white;
+}
+
+.service-wrapper{
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+.service-content{
+    width: 50%;
+    border-right:solid 1px #E5E5E5;
+    height: 250px;
+    text-align: center;
+    padding-top: 88px;
+}
+
+.service-title,.service-title-en{
+    color: #48B49E;
+}
+
+.service-title-en{
+    margin: 20px 0 52px 0;
+}
+
+.service-content a{
+    padding: 19px 44px;
+    background-color: #48B49E;
+    color: white;
+    border-radius: 5px;
+}
+
+.company-wrapper{
+    margin-top: -22px;
+    display: flex;
+}
+
+.company-content-left{
+    padding: 98px 58px 157px 120px;
+    width: 52%;
+}
+
+.company-text-item{
+    display: flex;
+    align-items: center;
+    border-top: solid 0.7px #E5E5E5;
+    border-bottom: solid 0.7px #E5E5E5;
+}
+
+.company-text-title{
+    padding: 24px 54px 24px 30px;
+}
+
+.company-text-content1{
+    margin-left: 17px;
+}
+
+.company-text-content3{
+    margin-left: 32px;
+}
+
+
+.green-border{
+    border-top: solid 1px #41B29D;
+}
+
+
+.company-content-right{
+    width: 48%;
+}
+
+.inquiry-wrapper{
+    padding: 84px 0 116px 0;
+    background-color: #48B49E;
+    margin-top: -22px;
+    z-index: 1;
+    border-bottom:solid 5px #3B4652;
+}
+
+.inquiry-content{
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+}
+
+.inquiry-content p{
+    color: white;
+}
+
+.inquiry-content .text-area,textarea{
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 8px 13px;
+}
+
+.inquiry-content input:focus,textarea:focus{
+    outline: none;
+}
+
+.inquiry-content textarea{
+    height: 200px;
+}
+
+.submitbtn{
+    display: inline-block;
+    padding: 10px 77px;
+    background-color: #131E2A;
+    color: white;
+    border-radius: 5px;
+}
+
+.div-tri{
+    z-index: 1000;
+}
+
+.footer-wrapper{
+    background-color: #031832;
+    padding: 86px 104px;
+}
+
+.footer-content{
+    margin: 0 auto;
+}
+
+.footer-title{
+    padding: 0 0 38px 10px;
+    border-bottom: solid 1px #A6A9AE;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-left{
+    display: flex;
+}
+
+.footer-bottom-left ul{
+    margin: 0 10px;
+}
+
+.footer-bottom-left ul li{
+    margin: 15px 0;
+    color: white;
+}
+
+.footer-bottom-left p{
+    color: white;
+}
+
+.footer-bottom-left ul i{
+    margin-right: 5px;
+}
+
+.footer-bottom-right{
+    width: 40%;
+    margin-right: 100px;
+}
+
+.fb-page,.fb-root{
+    width: 100%;
+}
+
+footer{
+    padding: 50px;
+    text-align: center;
+    background-color: #010A18;
+}
+
+footer p{
+    color: white;
+}
