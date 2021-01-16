@@ -1,0 +1,35 @@
+@media all and (max-width: 770px) {
+  .header-bar {
+    display: block;
+  }
+  .header-right__list, .header-sns {
+    display: none;
+  }
+  .top-content__text {
+    font-size: 30px;
+  }
+  .about-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-img {
+    margin-bottom: 25px;
+  }
+  .about-text {
+    margin-left: -40px;
+  }
+  .feature-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature-list__item {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=nagayuu-responsive.css.map */
