@@ -1,0 +1,366 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+ul{
+    list-style: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+@mixin text($color,$font,$align,$line){
+    color: $color;
+    font-size: $font;
+    font-family:YuGothic, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    text-align: $align;
+    line-height: $line;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-content{
+    max-width: 1180px;
+    width: 93%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    height: 80px;
+    width: 240px;
+}
+
+.header-link{
+    @include text(#144e94,20px,left,20px);
+}
+
+.work-wrapper{
+    padding: 60px 0 80px 0;
+}
+
+.work-content{
+    max-width: 1100px;
+    max-width: 97%;
+    margin: 0 auto;
+}
+
+.work-list{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    background-color: #144e94;
+    padding: 30px;
+    border-radius: 10px;
+
+    &__item{
+        width: 29%;
+        margin-bottom: 30px;
+        border: solid 1px #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.work-img{
+    transition: .5s;
+}
+
+.work-img.hover{
+    transform:scale(1.1);
+    opacity: 0.3;
+    transition: .5s;
+}
+
+.work-text{
+    padding: 20px;
+
+    &__tag{
+        @include text(#ffffff,20px,left,20px);
+    }
+
+    &__skill{
+        @include text(#ffffff,20px,left,20px);
+        margin: 20px 0
+    }
+
+    &__time{
+        @include text(#ffffff,20px,left,20px);
+    }
+}
+
+.content-title{
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    &__main{
+        @include text(#144e94,36px,center,40px);
+    }
+
+    &__sub{
+        @include text(#144e94,20px,center,30px);
+    }
+}
+
+.tab-area{
+    display: none;
+}
+
+.content-area{
+    display: none;
+}
+
+.tab-area {
+    cursor: pointer;
+    .tab {
+      
+      @include text(#ffffff,20px,center,20px);
+      width: auto;
+      height: 30px;
+      line-height: 30px;
+      text-align: left;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .tab:before{
+        content: '';
+	    width: 0;
+	    left: 50%;
+	    bottom: 0;
+	    transition: all 0.3s ease;
+	    border-bottom: 1px solid #ffffff;
+	    position: absolute;
+	    display: block;
+    }
+
+    .tab:after{
+        content: '';
+	    width: 0;
+	    right: 50%;
+	    bottom: 0;
+	    transition: all 0.3s ease;
+	    border-bottom: 1px solid #ffffff;
+	    position: absolute;
+	    display: block;
+    }
+
+    .tab:hover:after,.tab:hover:before{
+        width: 50%;
+	    border-bottom: 1px solid #ffffff;
+    }
+
+    .tab:not(:nth-of-type(3)){
+        margin-right: 50px;
+    }
+
+    .tab.active {
+      color: #ffffff;
+    }
+
+    .tab.active:before,.tab.active:after{
+        width: 50%;
+	    border-bottom: 1px solid #ffffff;
+    }
+  }
+  .content-area {
+    font-size: 30px;
+    text-align: center;
+    .content {
+      display: none;
+    }
+    .content.show {
+      margin-top: 50px;
+      display: block;
+    }
+  }
+
+  .about-me-text{
+    @include text(#ffffff,18px,left,20px);
+    line-height: 30px;
+  }
+
+  .long-text{
+      margin-top: 15px;
+  }
+
+  .sns-btn{
+      margin: 25px 0;
+
+      &__link{
+          @include text(#ffffff,18px,center,20px);
+          padding: 20px 25px;
+          background-color: #00acee;
+          border-radius: 50px;
+          box-shadow: 2px 4px #0097d3;
+      }
+
+      &__link:hover{
+        box-shadow: none;
+        margin-top: 4px;
+        margin-left: 2px;
+      }
+  }
+
+footer{
+    background-color: #144e94;
+    padding: 30px 0;
+}
+
+.footer-content{
+    max-width: 1180px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    &__text{
+        @include text(#ffffff,16px,left,20px);
+    }
+}
+
+.footer-top{
+    display: flex;
+    align-items: center;
+
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        &--item{
+            margin: 0 15px;
+        }
+    }
+}
+
+.footer-link{
+    @include text(#ffffff,20px,left,20px);
+}
+
+.footer-logo{
+    height: 100px;
+    width: 100px;
+    margin: 20px 0;
+}

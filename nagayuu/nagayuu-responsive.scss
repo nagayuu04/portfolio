@@ -1,0 +1,35 @@
+@media all and (max-width: 770px){
+    .header-bar{
+        display: block;
+    }
+
+    .header-right__list,.header-sns{
+        display: none;
+    }
+
+    .top-content__text{
+        font-size: 30px;
+    }
+
+    .about-main{
+        flex-direction: column;
+    }
+
+    .about-img{
+        margin-bottom: 25px;
+    }
+
+    .about-text{
+        margin-left: -40px;
+    }
+
+    .feature-list{
+        flex-direction: column;
+
+        &__item{
+            width: 95%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}
