@@ -105,7 +105,7 @@ body{
     color: #333333;
     line-height: 1.6;
     max-width: 1440px;
-    overflow: hidden;
+    
 }
 
 ul{
@@ -126,8 +126,9 @@ header{
 
 .header-content{
     padding: 20px 0;
-    width: 1170px;
-    max-width: calc(100% - 20px);
+    width: 95%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 header img{
@@ -137,7 +138,6 @@ header img{
 
 .header-left{
     display: flex;
-    margin-left: 142px;
 }
 
 .header-left p{
@@ -775,9 +775,8 @@ h2{
 .a-content{
     margin: 0 auto;
     display: flex;
-    width: calc(100% - 100px);
-    max-width: 1170px;
-    margin-left: 300px;
+    width: 90%;
+    max-width: 770px;
     margin-bottom: 42px;
     font-style: italic;
     color: #777777;
@@ -857,8 +856,9 @@ h2{
 }
 
 .flow-img{
+    max-width: 1170px;
     margin: 50px 0 32px 0;
-    width: 100%;
+    width: 95%;
 }
 
 .learn-step-content{
@@ -967,8 +967,8 @@ h2{
 .present-box{
     margin: 0 auto;
     border: solid 1px white;
-    max-width: calc(100% - 40px);
-    width: 1170px;
+    max-width: 1170px;
+    width: 90%;
     padding: 40px;
     position: relative;
 }
