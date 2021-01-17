@@ -582,7 +582,9 @@ select{
 }
 
 .expected-right-btn{
-    padding: 16px 112px;
+    padding: 16px 0;
+    display: inline-block;
+    width: 100%;
     background-color:#222222;
     border-radius: 10px;
 }
