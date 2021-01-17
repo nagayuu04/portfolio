@@ -43,7 +43,7 @@ $(function(){
     }
     });
 
-    var pagetop = $('page-top');
+    var pagetop = $('.page-top');
   // ボタン非表示
   pagetop.hide();
 
